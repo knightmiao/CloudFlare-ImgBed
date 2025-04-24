@@ -1,0 +1,10 @@
+name = "cloudflare-imgbed"
+compatibility_date = "2025-04-24"
+
+[build]
+command = "npm install && npm run build"  # 如果有build脚本
+upload_dir = "dist"  # 如果有静态文件目录
+
+[build.upload]
+format = "modules"
+main = "./index.js"  # 主入口文件
